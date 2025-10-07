@@ -13,7 +13,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -54,17 +53,15 @@ fun DreamHeader(
 				.fillMaxWidth(0f)
 		)
 
-		{
-			// Clock
-			AnimatedVisibility(
-				visible = showClock,
-				enter = fadeIn(),
-				exit = fadeOut(),
-				modifier = Modifier
-					.align(Alignment.TopEnd),
-			) {
-				ToolbarClock()
-			}
+		// Clock
+		AnimatedVisibility(
+			visible = showClock,
+			enter = fadeIn(),
+			exit = fadeOut(),
+			modifier = Modifier
+				.align(Alignment.TopEnd),
+		) {
+			ToolbarClock()
 		}
 	}
 }
