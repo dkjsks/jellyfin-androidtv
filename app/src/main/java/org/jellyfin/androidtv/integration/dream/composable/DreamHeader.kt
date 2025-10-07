@@ -31,6 +31,7 @@ fun DreamHeader(
 ) {
 	Row(
 		horizontalArrangement = Arrangement.SpaceBetween,
+		verticalAlignment = Alignment.CenterVertically,
 		modifier = Modifier
 			.fillMaxWidth()
 			.overscan(),
@@ -59,7 +60,6 @@ fun DreamHeader(
 			enter = fadeIn(),
 			exit = fadeOut(),
 			modifier = Modifier
-				.align(Alignment.TopEnd),
 		) {
 			ToolbarClock()
 		}
