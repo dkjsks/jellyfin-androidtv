@@ -9,6 +9,8 @@ on:
 permissions:
   contents: read
 
+env:
+  JELLYFIN_VERSION: v0.19.0-beta.5.1-dkjsks
 jobs:
   build:
     name: Build
